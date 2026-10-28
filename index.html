@@ -35,7 +35,7 @@ html{-webkit-tap-highlight-color:transparent}button,a,.cd,tr.cl{touch-action:man
 <div id="inst"><b>Install Event Spaces</b><p class="muted" style="margin:4px 0 10px" id="instt">Add to your home screen for instant access.</p><div class="row" style="margin:0"><button class="btn" id="instb">Install</button><button class="btn2" onclick="instHide()">Maybe later</button></div></div>
 <div id="modal" onclick="if(event.target.id==='modal')mdl.close()"></div><div id="toast"></div>
 <script>
-const SUPABASE_URL='PASTE_PROJECT_URL', SUPABASE_KEY='PASTE_ANON_PUBLIC_KEY', DOMAIN='sahabhavana.app';
+const SUPABASE_URL='https://loemmecsedfgonwiyamo.supabase.co', SUPABASE_KEY='sb_publishable_H8VZzWpV0mKkRGvqM7X7Yg_Lan-zdSx', DOMAIN='sahabhavana.app';
 const $=s=>document.querySelector(s),esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const inr=n=>'₹'+Number(n||0).toLocaleString('en-IN'),dmy=d=>d?String(d).slice(0,10).split('-').reverse().join('-'):'—';
 const uid=()=>crypto.randomUUID(),pad=n=>('0'+n).slice(-2),ymNow=()=>{const d=new Date();return d.getFullYear()+'-'+pad(d.getMonth()+1)},todayS=()=>{const d=new Date();return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())};
